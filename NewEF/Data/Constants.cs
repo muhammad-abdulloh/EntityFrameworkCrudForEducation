@@ -8,6 +8,6 @@ namespace NewEF.Data
 {
     public class Constants
     {
-        public static readonly string CONNECTION_STRING = @"Server=(localdb)\MSSQLLocalDB; Database=Hotel;Trusted_Connection=True;";
+        public static readonly string CONNECTION_STRING = @"Server=(localdb)\MSSQLLocalDB; Database=EduCenter;Trusted_Connection=True;";
     }
 }

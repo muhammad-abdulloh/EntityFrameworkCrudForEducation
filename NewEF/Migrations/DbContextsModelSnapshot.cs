@@ -8,7 +8,7 @@ using NewEF.Data;
 namespace NewEF.Migrations
 {
     [DbContext(typeof(DbContexts))]
-    partial class DbConnectionsModelSnapshot : ModelSnapshot
+    partial class DbContextsModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -58,10 +58,13 @@ namespace NewEF.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("GroupId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -96,7 +99,10 @@ namespace NewEF.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("SubjectId")
